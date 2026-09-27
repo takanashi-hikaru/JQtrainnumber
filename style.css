@@ -1,0 +1,102 @@
+body{
+    font-family: sans-serif;
+    text-align:center;
+    background:#f4f4f4;
+    margin-top:40px;
+}
+
+input{
+    padding:10px;
+    width:220px;
+    font-size:18px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+table{
+    margin:20px auto;
+    border-collapse:collapse;
+}
+
+td{
+    border:1px solid #999;
+    padding:10px 30px;
+    font-size:18px;
+}
+
+.detail{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+
+.imageArea{
+    display:flex;
+    gap:10px;
+}
+
+.trainImage{
+    width:100px;
+}
+
+/* 運行情報 共通 */
+#operationInfo {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto 25px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#operationInfo h2 {
+    margin-top: 0;
+}
+
+#operationText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#operationUpdate {
+    font-size: 13px;
+}
+
+
+/*  平常運転 */
+#operationInfo.normal {
+    background-color: #e8f5e9;
+    border: 3px solid #2e7d32;
+}
+
+#operationInfo.normal h2 {
+    color: #2e7d32;
+}
+
+
+/*  遅延 */
+#operationInfo.delay {
+    background-color: #fff8e1;
+    border: 3px solid #f9a825;
+}
+
+#operationInfo.delay h2 {
+    color: #f57f17;
+}
+
+
+/*  運転見合わせ */
+#operationInfo.stop {
+    background-color: #ffebee;
+    border: 3px solid #c62828;
+}
+
+#operationInfo.stop h2 {
+    color: #c62828;
+}

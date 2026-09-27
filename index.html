@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>列車番号検索</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- 運行情報 -->
+<div id="operationInfo" class="stop">
+    <h2 id="operationTitle">現在使用不可です</h2>
+    <p id="operationText">バグ修正中です。修正完了までお待ちください</p>
+    <p id="operationUpdate">最終更新：16:00</p>
+</div>
+
+
+    <!-- ログイン画面 -->
+    <div id="login">
+
+        <h2>ログイン</h2>
+
+        <input type="text" id="userId" placeholder="ID">
+        <br><br>
+
+        <input type="password" id="password" placeholder="パスワード">
+        <br><br>
+
+        <button onclick="login()">ログイン</button>
+
+    </div>
+
+    <!-- 検索画面 -->
+    <div id="main" style="display:none;">
+
+        <h1>列車番号検索</h1>
+
+        <input type="text" id="trainNo" placeholder="列車番号を入力してください">
+        <button onclick="searchTrain()">検索</button>
+
+        <div id="result"></div>
+        <h2>GPS駅ちか時刻表</h2>
+
+<button onclick="findNearbyStation()">
+    現在地から最寄り駅を検索
+</button>
+
+<div id="gpsResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
